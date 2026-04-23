@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aprovação de Contas 2026 — Victoria Hofmeister Advocacia</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --verde: #3d5a52;
+    --verde-escuro: #2c4a3e;
+    --bege: #c8bfa8;
+    --bege-claro: #f5f2ed;
+    --texto: #2c2c2a;
+    --muted: #6b6b68;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bege-claro);
+    color: var(--texto);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.8;
+    font-size: 16px;
+  }
+
+  header {
+    background: var(--verde);
+    padding: 48px 40px 56px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  header::after {
+    content: '30';
+    position: absolute;
+    right: -20px;
+    top: -40px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 280px;
+    font-weight: 300;
+    color: rgba(255,255,255,0.04);
+    line-height: 1;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  .marca {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--bege);
+    opacity: 0.7;
+    margin-bottom: 32px;
+  }
+
+  header h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(36px, 6vw, 64px);
+    font-weight: 300;
+    color: var(--bege);
+    line-height: 1.1;
+    max-width: 600px;
+  }
+
+  header h1 em {
+    font-style: italic;
+    color: rgba(200, 191, 168, 0.7);
+  }
+
+  .prazo-badge {
+    display: inline-block;
+    margin-top: 32px;
+    background: rgba(200, 191, 168, 0.15);
+    border: 1px solid rgba(200, 191, 168, 0.3);
+    padding: 10px 20px;
+    border-radius: 2px;
+    font-size: 12px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--bege);
+  }
+
+  main {
+    max-width: 740px;
+    margin: 0 auto;
+    padding: 64px 40px 80px;
+  }
+
+  .intro {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(20px, 3vw, 26px);
+    font-weight: 300;
+    color: var(--verde-escuro);
+    line-height: 1.5;
+    margin-bottom: 48px;
+    padding-bottom: 48px;
+    border-bottom: 1px solid rgba(61, 90, 82, 0.15);
+  }
+
+  section {
+    margin-bottom: 48px;
+    padding-bottom: 48px;
+    border-bottom: 1px solid rgba(61, 90, 82, 0.1);
+  }
+
+  section:last-of-type {
+    border-bottom: none;
+  }
+
+  h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--verde);
+    margin-bottom: 20px;
+    letter-spacing: 0.02em;
+  }
+
+  p {
+    color: var(--texto);
+    margin-bottom: 16px;
+    font-size: 15.5px;
+  }
+
+  p:last-child { margin-bottom: 0; }
+
+  .destaque {
+    background: var(--verde);
+    border-radius: 4px;
+    padding: 28px 32px;
+    margin: 32px 0;
+  }
+
+  .destaque p {
+    color: var(--bege);
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .destaque strong {
+    color: #fff;
+    font-weight: 500;
+  }
+
+  ul {
+    list-style: none;
+    margin: 20px 0;
+  }
+
+  ul li {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 14px;
+    font-size: 15.5px;
+    color: var(--texto);
+  }
+
+  ul li::before {
+    content: '→';
+    color: var(--verde);
+    flex-shrink: 0;
+    margin-top: 1px;
+    font-size: 14px;
+  }
+
+  .artigo {
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 8px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+  }
+
+  .alerta {
+    border-left: 3px solid var(--verde);
+    padding: 20px 24px;
+    margin: 24px 0;
+    background: rgba(61, 90, 82, 0.04);
+  }
+
+  .alerta p {
+    font-size: 15px;
+    color: var(--verde-escuro);
+    margin: 0;
+  }
+
+  footer {
+    background: var(--verde-escuro);
+    padding: 40px;
+    text-align: center;
+  }
+
+  footer p {
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--bege);
+    opacity: 0.6;
+    margin: 0;
+  }
+
+  footer a {
+    color: var(--bege);
+    text-decoration: none;
+    opacity: 0.8;
+  }
+
+  @media (max-width: 600px) {
+    header { padding: 40px 24px 48px; }
+    main { padding: 48px 24px 64px; }
+    footer { padding: 32px 24px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <p class="marca">Victoria Hofmeister Advocacia</p>
+  <h1>Aprovação de Contas<br><em>Exercício 2025</em></h1>
+  <div class="prazo-badge">Prazo: 30 de abril de 2026</div>
+</header>
+
+<main>
+
+  <p class="intro">Todo ano, nos quatro meses seguintes ao encerramento do exercício social, sócios e acionistas precisam se reunir para cumprir uma obrigação legal que muitos deixam passar — e que pode custar caro quando ignorada.</p>
+
+  <section>
+    <p class="artigo">Código Civil, art. 1.078 — Lei das S.A., art. 132</p>
+    <h2>O que é a aprovação de contas</h2>
+    <p>A aprovação de contas é a reunião ou assembleia anual em que os sócios analisam e deliberam sobre as demonstrações financeiras da sociedade referentes ao exercício anterior.</p>
+    <p>Para o exercício encerrado em 31 de dezembro de 2025, o prazo se encerra em <strong>30 de abril de 2026</strong>. Não é recomendação. É obrigação legal.</p>
+
+    <div class="destaque">
+      <p>Três pontos que precisam ser deliberados:</p>
+      <br>
+      <p><strong>01 —</strong> Aprovação das demonstrações financeiras do exercício anterior</p>
+      <br>
+      <p><strong>02 —</strong> Destinação do resultado — se houve lucro, como ele será distribuído</p>
+      <br>
+      <p><strong>03 —</strong> Eleição ou ratificação de administradores, se aplicável</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Por que isso protege o administrador</h2>
+    <p>Aprovação de contas não é só cumprimento formal. É a proteção do administrador.</p>
+    <p>Quando as contas são aprovadas pelos sócios, fica muito mais difícil alguém levantar depois que os números estavam errados, que houve irregularidade ou que o administrador agiu de forma inadequada.</p>
+    <div class="alerta">
+      <p>Sem aprovação, essa porta fica aberta. E em um conflito societário, ela vira munição contra quem administrou a sociedade.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Sociedades Limitadas (Ltda.)</h2>
+    <p>A ata da reunião de sócios deve ser protocolada na Junta Comercial competente idealmente nos <strong>20 dias seguintes</strong> à data da reunião.</p>
+    <p>A publicação das demonstrações financeiras não é obrigatória para sociedades limitadas — inclusive para as de grande porte, conforme orientação do DREI.</p>
+  </section>
+
+  <section>
+    <h2>Sociedades Anônimas (S.A.)</h2>
+    <p>A ata da assembleia geral ordinária deve ser arquivada na Junta Comercial nos <strong>30 dias seguintes</strong> à sua realização.</p>
+    <p>Em relação à publicação das demonstrações financeiras:</p>
+    <ul>
+      <li>Companhias abertas e fechadas de grande porte devem publicar em jornal de grande circulação — de forma resumida no impresso e na íntegra no site do mesmo jornal, simultaneamente. A publicação no Diário Oficial não é mais exigida.</li>
+      <li>Companhias fechadas com receita bruta anual de até <strong>R$ 78 milhões</strong> podem publicar de forma eletrônica na Central de Balanços do SPED e disponibilizar as demonstrações em seu site.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Resumo dos prazos</h2>
+    <ul>
+      <li>Realização da assembleia ou reunião: até <strong>30 de abril de 2026</strong></li>
+      <li>Protocolo da ata na Junta Comercial (Ltda.): idealmente nos <strong>20 dias</strong> seguintes</li>
+      <li>Protocolo da ata na Junta Comercial (S.A.): idealmente nos <strong>30 dias</strong> seguintes</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  <p>Victoria Hofmeister Advocacia &nbsp;·&nbsp; <a href="https://instagram.com/victoriahofmeisteradv">@victoriahofmeisteradv</a></p>
+</footer>
+
+</body>
+</html>
